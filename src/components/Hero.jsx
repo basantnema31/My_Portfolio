@@ -75,7 +75,7 @@ export function Hero({ darkMode }) {
                                 {/* Stats Pills */}
                                 <div className="flex items-center gap-3">
                                     <div className="text-[10px] font-bold tracking-wide text-gray-900 dark:text-gray-100 bg-white dark:bg-[#1a1a1a] px-3.5 py-[0.35rem] rounded-full border border-gray-200 dark:border-gray-800 shadow-sm">
-                                        7.05 CGPA
+                                        0.00 CGPA
                                     </div>
                                     <div className="text-[10px] font-bold tracking-wide text-gray-900 dark:text-gray-100 bg-white dark:bg-[#1a1a1a] px-3.5 py-[0.35rem] rounded-full border border-gray-200 dark:border-gray-800 shadow-sm">
                                         2nd Year Student
@@ -106,9 +106,9 @@ export function Hero({ darkMode }) {
                                     >
                                         Basant Nema
                                     </h2>
-                                    <sub className="absolute -right-12 sm:-right-16 lg:-right-[5.5rem] bottom-[0.8rem] lg:bottom-[0.5rem] text-[0.85rem] sm:text-sm tracking-wide text-gray-500/70 dark:text-gray-400/70 font-normal animate-pulse whitespace-nowrap">
+                                    {/* <sub className="absolute -right-12 sm:-right-16 lg:-right-[5.5rem] bottom-[0.8rem] lg:bottom-[0.5rem] text-[0.85rem] sm:text-sm tracking-wide text-gray-500/70 dark:text-gray-400/70 font-normal animate-pulse whitespace-nowrap">
                                         (bassii)
-                                    </sub>
+                                    </sub> */}
                                 </div>
                                 <h3 className="text-[1.4rem] sm:text-[1.75rem] lg:text-[2.2rem] text-gray-600 dark:text-gray-300 font-medium max-w-[42rem] min-w-full leading-[1.4]">
                                     Frontend Developer, Cloud Certified

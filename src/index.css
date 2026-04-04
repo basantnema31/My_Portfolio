@@ -25,6 +25,13 @@
 }
 
 @layer base {
+  /* ONLY for mobile devices: Adjust this number to change the gap! */
+  @media (max-width: 1023px) {
+    html {
+      scroll-padding-top: 0.5rem; /* Lower this for LESS gap, raise it for MORE gap */
+    }
+  }
+
   html, body {
     @apply overflow-x-hidden max-w-full;
   }

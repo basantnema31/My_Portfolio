@@ -20,21 +20,21 @@ export function Education() {
       year: "2024-2028",
       college: "Acropolis Institute of Technology and Research, Indore",
       specialization: "Computer Science and Engineering",
-      score: "CGPA: 7.05"
+      // score: "CGPA: 7.05"
     },
     {
       degree: "12th Standard",
       year: "2024",
       college: "Sica Senior Secondary School, Indore (CBSE)",
       specialization: "",
-      score: "Percentage: 00.00%"
+      // score: "Percentage: 00.00%"
     },
     {
       degree: "10th Standard",
       year: "2022",
       college: "Sica Senior Secondary School, Indore (CBSE)",
       specialization: "",
-      score: "Percentage: 00.00%"
+      // score: "Percentage: 00.00%"
     }
   ];
 

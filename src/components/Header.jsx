@@ -179,8 +179,7 @@ export function Header({ darkMode, setDarkMode }) {
                                                         if (!isHomePage) {
                                                             handleNav('education', 'Education');
                                                         } else {
-                                                            document.getElementById('education')?.scrollIntoView({ behavior: 'smooth' }); 
-                                                            setActiveSection('Education'); 
+                                                            handleNav('education', 'Education'); 
                                                         }
                                                         setOpenDropdown(null); 
                                                     }}

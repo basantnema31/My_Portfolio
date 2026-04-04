@@ -66,15 +66,15 @@ function ActivityCard({ activity }) {
             <div className="space-y-2.5 mb-5 relative z-10">
                 <div className="flex items-center gap-2 text-[0.8rem] text-gray-500 dark:text-zinc-400 font-medium">
                     <Calendar size={14} className="opacity-70" />
-                    <span>{activity.date}</span>
+                    <span className="truncate">{activity.date}</span>
                 </div>
                 <div className="flex items-center gap-2 text-[0.8rem] text-gray-500 dark:text-zinc-400 font-medium">
                     <MapPin size={14} className="opacity-70" />
-                    <span>{activity.location}</span>
+                    <span className="truncate">{activity.location}</span>
                 </div>
-                <div className="flex justify-between items-center pt-1 border-t border-gray-100 dark:border-zinc-800/50 mt-1">
-                    <span className="text-[0.8rem] font-bold text-gray-800 dark:text-zinc-200">Organizer:</span>
-                    <span className="text-[0.75rem] text-gray-500 dark:text-zinc-400 font-medium">{activity.organizer}</span>
+                <div className="grid grid-cols-[auto_1fr] items-center pt-1 border-t border-gray-100 dark:border-zinc-800/50 mt-1 gap-2">
+                    <span className="text-[0.75rem] sm:text-[0.8rem] font-bold text-gray-800 dark:text-zinc-200 whitespace-nowrap">Organizer:</span>
+                    <span className="text-[0.7rem] sm:text-[0.75rem] text-gray-500 dark:text-zinc-400 font-medium truncate text-right">{activity.organizer}</span>
                 </div>
             </div>
 
@@ -219,12 +219,12 @@ export function ActivitiesPage() {
 
                 {/* Filter Tabs Bar */}
                 <div className="container mx-auto 2xl:max-w-[1536px] px-4 mb-12">
-                    <div className="max-w-[1000px] mx-auto overflow-hidden rounded-xl border border-gray-200 dark:border-white/10 bg-gray-50/50 dark:bg-white/5 p-1 flex items-stretch">
+                    <div className="max-w-[1000px] mx-auto overflow-x-auto no-scrollbar rounded-xl border border-gray-200 dark:border-white/10 bg-gray-50/50 dark:bg-white/5 p-1 flex items-stretch gap-1">
                         {categoryConfig.map(config => (
                             <button
                                 key={config.label}
                                 onClick={() => setActiveCategory(config.label)}
-                                className={`flex-1 py-2 rounded-lg text-sm font-semibold flex items-center justify-center gap-2.5 transition-all duration-300 ${
+                                className={`flex-1 min-w-max py-2 px-3 sm:px-4 rounded-lg text-[11px] xs:text-[13px] sm:text-sm font-semibold flex items-center justify-center gap-1.5 sm:gap-2.5 transition-all duration-300 ${
                                     activeCategory === config.label
                                         ? 'bg-black text-white dark:bg-white dark:text-black shadow-md'
                                         : 'text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white'

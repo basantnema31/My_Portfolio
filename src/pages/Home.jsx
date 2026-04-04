@@ -54,14 +54,14 @@ export function Home({ darkMode }) {
             } else {
                 const element = document.getElementById(targetId);
                 if (element) {
-                    // Manual offset for the fixed navbar (≈72px) so section never hides behind it
-                    const navbarHeight = document.querySelector('header, nav')?.offsetHeight ?? 72;
-                    const top = element.getBoundingClientRect().top + window.scrollY - navbarHeight;
-                    window.scrollTo({ top, behavior: 'auto' });
+                    // element.scrollIntoView handles the top offset automatically 
+                    // thanks to the scroll-padding-top we added to index.css
+                    element.scrollIntoView({ behavior: 'auto', block: 'start' });
                 }
             }
-            setIsJumping(false);
-        }, 50);
+            // Give the browser a moment to settle after jump before showing the page
+            setTimeout(() => setIsJumping(false), 50);
+        }, 100);
 
         if (window.history.state && window.history.state.usr) {
             const newHistoryState = { ...window.history.state };

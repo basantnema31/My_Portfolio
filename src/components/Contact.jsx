@@ -14,7 +14,7 @@ export function Contact() {
     }, [isOpen]);
 
     return (
-        <section id="contact" className="py-10 md:py-20 relative z-10">
+        <section id="contact" className="py-20 relative z-10">
             <div className="container mx-auto 2xl:max-w-[1536px] px-4 animate-in-up delay-900">
                 <details 
                     className="border border-gray-200 dark:border-white/20 rounded-2xl bg-white dark:bg-[#0a0a0a] overflow-hidden shadow-sm transition-shadow duration-300 group"

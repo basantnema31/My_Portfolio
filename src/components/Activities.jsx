@@ -73,23 +73,23 @@ function ActivityCard({ data }) {
             </h3>
 
             <div className="mt-3 space-y-2">
-                <div className="flex justify-between items-center gap-4">
-                    <span className="text-[0.875rem] text-gray-900 dark:text-[#fafafa] font-medium tracking-tight">Role:</span>
-                    <span className="text-[0.75rem] font-medium border border-gray-200 dark:border-[#262626] rounded-full px-2.5 py-0.5 text-gray-900 dark:text-[#fafafa] bg-transparent">
+                <div className="flex justify-between items-center gap-2">
+                    <span className="text-[0.8rem] sm:text-[0.875rem] text-gray-900 dark:text-[#fafafa] font-medium tracking-tight">Role:</span>
+                    <span className="text-[0.7rem] sm:text-[0.75rem] font-medium border border-gray-200 dark:border-[#262626] rounded-full px-2.5 py-0.5 text-gray-900 dark:text-[#fafafa] bg-transparent whitespace-nowrap">
                         {data.role}
                     </span>
                 </div>
 
-                <div className="flex justify-between items-center gap-4">
-                    <span className="text-[0.875rem] text-gray-900 dark:text-[#fafafa] font-medium tracking-tight">Organizer:</span>
-                    <span className="text-[0.875rem] text-right text-gray-600 dark:text-[#a3a3a3] truncate">
+                <div className="grid grid-cols-[auto_1fr] items-center gap-3">
+                    <span className="text-[0.8rem] sm:text-[0.875rem] text-gray-900 dark:text-[#fafafa] font-medium tracking-tight">Organizer:</span>
+                    <span className="text-[0.75rem] sm:text-[0.875rem] text-right text-gray-600 dark:text-[#a3a3a3] truncate">
                         {data.organizer}
                     </span>
                 </div>
 
-                <div className="flex justify-between items-center gap-4">
-                    <span className="text-[0.875rem] text-gray-900 dark:text-[#fafafa] font-medium tracking-tight">Award:</span>
-                    <span className="text-[0.75rem] font-semibold bg-yellow-100 text-yellow-800 dark:bg-yellow-100 dark:text-yellow-800 rounded-full px-2.5 py-0.5 whitespace-nowrap border border-transparent">
+                <div className="flex justify-between items-center gap-2">
+                    <span className="text-[0.8rem] sm:text-[0.875rem] text-gray-900 dark:text-[#fafafa] font-medium tracking-tight">Award:</span>
+                    <span className="text-[0.7rem] sm:text-[0.75rem] font-semibold bg-yellow-100 text-yellow-800 dark:bg-yellow-100 dark:text-yellow-800 rounded-full px-2.5 py-0.5 whitespace-nowrap border border-transparent">
                         {data.award}
                     </span>
                 </div>
@@ -175,18 +175,18 @@ export function Activities() {
 
                         {/* Tabs Container */}
                         <div className="w-full mb-8 mt-2">
-                            <div className="grid grid-cols-2 h-10 items-center justify-center rounded-[0.55rem] bg-gray-100 dark:bg-[#121212] p-1 w-full border border-transparent dark:border-[#262626] border-solid">
+                            <div className="grid grid-cols-2 h-10 items-center justify-center rounded-[0.55rem] bg-gray-100 dark:bg-[#121212] p-1 w-full border border-transparent dark:border-[#262626] border-solid transition-all duration-300">
                                 <button
                                     onClick={(e) => { e.preventDefault(); setActiveTab('cocurricular'); }}
-                                    className={`inline-flex items-center justify-center whitespace-nowrap rounded-[0.4rem] px-3 py-1.5 text-sm font-medium transition-all duration-200 gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-300 dark:focus-visible:ring-[#404040] ${activeTab === 'cocurricular' ? 'bg-white dark:bg-[#0a0a0a] text-gray-900 dark:text-gray-100 shadow-sm ring-1 ring-black/5 dark:ring-[#262626]' : 'text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'}`}
+                                    className={`inline-flex items-center justify-center whitespace-nowrap rounded-[0.4rem] px-2 sm:px-3 py-1.5 text-[11px] xs:text-[13px] sm:text-sm font-medium transition-all duration-200 gap-1.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-300 dark:focus-visible:ring-[#404040] ${activeTab === 'cocurricular' ? 'bg-white dark:bg-[#0a0a0a] text-gray-900 dark:text-gray-100 shadow-sm ring-1 ring-black/5 dark:ring-[#262626]' : 'text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'}`}
                                 >
-                                    <Trophy size={16} strokeWidth={2} /> Co-curricular Activities
+                                    <Trophy size={14} className="sm:w-4 sm:h-4" strokeWidth={2} /> Co-curricular
                                 </button>
                                 <button
                                     onClick={(e) => { e.preventDefault(); setActiveTab('extracurricular'); }}
-                                    className={`inline-flex items-center justify-center whitespace-nowrap rounded-[0.4rem] px-3 py-1.5 text-sm font-medium transition-all duration-200 gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-300 dark:focus-visible:ring-[#404040] ${activeTab === 'extracurricular' ? 'bg-white dark:bg-[#0a0a0a] text-gray-900 dark:text-gray-100 shadow-sm ring-1 ring-black/5 dark:ring-[#262626]' : 'text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'}`}
+                                    className={`inline-flex items-center justify-center whitespace-nowrap rounded-[0.4rem] px-2 sm:px-3 py-1.5 text-[11px] xs:text-[13px] sm:text-sm font-medium transition-all duration-200 gap-1.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-300 dark:focus-visible:ring-[#404040] ${activeTab === 'extracurricular' ? 'bg-white dark:bg-[#0a0a0a] text-gray-900 dark:text-gray-100 shadow-sm ring-1 ring-black/5 dark:ring-[#262626]' : 'text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'}`}
                                 >
-                                    <Users size={16} strokeWidth={2} /> Extra-curricular Activities
+                                    <Users size={14} className="sm:w-4 sm:h-4" strokeWidth={2} /> Extra-curricular
                                 </button>
                             </div>
                         </div>
