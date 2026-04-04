@@ -25,6 +25,10 @@
 }
 
 @layer base {
+  html, body {
+    @apply overflow-x-hidden max-w-full;
+  }
+
   * {
     @apply border-border;
   }

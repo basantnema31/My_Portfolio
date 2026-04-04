@@ -49,7 +49,7 @@ function App() {
     return (
         <Router>
             <ScrollToTop />
-            <div className="min-h-screen bg-background transition-colors duration-300 relative">
+            <div className="min-h-screen bg-background transition-colors duration-300 relative overflow-x-hidden max-w-full">
             {/* Premium Background System */}
             <AnimatedGrid darkMode={darkMode} />
                 <Header

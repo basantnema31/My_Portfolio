@@ -106,7 +106,8 @@ export function Hero({ darkMode }) {
                                     >
                                         Basant Nema
                                     </h2>
-                                    <sub className="absolute -right-16 lg:-right-[5.5rem] bottom-[0.8rem] lg:bottom-[0.5rem] text-[0.85rem] sm:text-sm tracking-wide text-gray-500/70 dark:text-gray-400/70 font-normal animate-pulse">                                        (bassii)
+                                    <sub className="absolute -right-12 sm:-right-16 lg:-right-[5.5rem] bottom-[0.8rem] lg:bottom-[0.5rem] text-[0.85rem] sm:text-sm tracking-wide text-gray-500/70 dark:text-gray-400/70 font-normal animate-pulse whitespace-nowrap">
+                                        (bassii)
                                     </sub>
                                 </div>
                                 <h3 className="text-[1.4rem] sm:text-[1.75rem] lg:text-[2.2rem] text-gray-600 dark:text-gray-300 font-medium max-w-[42rem] min-w-full leading-[1.4]">
