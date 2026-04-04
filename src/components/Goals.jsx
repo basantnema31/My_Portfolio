@@ -125,7 +125,7 @@ export function Goals() {
     }, [isOpen]);
 
     return (
-        <section id="goals" className="py-10 md:py-20 relative z-10">
+        <section id="goals" className="py-20 relative z-10">
             <div className="container mx-auto 2xl:max-w-[1536px] px-4 animate-in-up delay-800">
                 {/* Accordion Wrapper */}
                 <div className="border border-gray-200 dark:border-white/20 rounded-2xl bg-white dark:bg-[#0a0a0a] overflow-hidden shadow-sm transition-shadow duration-300 group">
